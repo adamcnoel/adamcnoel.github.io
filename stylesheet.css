@@ -1,0 +1,144 @@
+html {
+    background-color: rgb(238, 244, 220);
+    font-family: 'Cambay', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+body {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.125em;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.556em;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.333em;
+    line-height: 100%;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.111em;
+    font-weight: normal;
+    line-height: 100%;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 2em;
+    list-style-position: inside;
+    list-style-type: square;
+    text-indent: -1em;
+}
+
+ul ul {
+    padding-left: 2em;
+    list-style-type: circle;
+}
+
+section > header {
+    border-bottom: 1px solid;
+    margin: 25px 0 10px 0;
+}
+
+article > header {
+    margin: 25px 0 10px 0;
+}
+
+article > h3 {
+    margin: 15px 0 5px 0;
+}
+
+.contact_info {
+    height: 85px;
+    margin: 45px auto 25px auto;
+    position: relative;
+    border-bottom: 4px solid;
+}
+
+article {
+    max-width: 825px;
+    margin: 0 0 0 auto;
+}
+
+.address {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.contact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin: 0;
+}
+
+.name {
+    text-transform: uppercase;
+    line-height: 100%;
+    margin: 0px 0px 20px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100%;
+}
+
+.organization {
+    text-transform: uppercase;
+}
+
+.job_title {
+    font-style: italic;
+}
+
+.date_range {
+    float: right;
+    font-size: large;
+}
+
+span.text_with_popup {
+    text-decoration: underline;
+}
+
+span.text_with_popup:hover {
+    background: #ffffff;
+}
+
+span.text_with_popup div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-indent: 0;
+    margin: 50px;
+    border: 1px solid;
+    visibility: hidden;
+}
+
+span.text_with_popup:hover div {
+    visibility: visible;
+}
+
+@media (max-width: 850px) {
+    .date_range {
+        display: none;
+    }
+    body {
+        padding: 25px;
+    }
+}
